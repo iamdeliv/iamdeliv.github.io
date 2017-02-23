@@ -1,0 +1,41 @@
+ p  {text-align:center;}
+ h1  {text-align:center;}
+ h2  {text-align:center;}
+
+ /* Nav bar properties */
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #696969;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #e8e8e8;
+}
+
+/* Table properties*/
+th {
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

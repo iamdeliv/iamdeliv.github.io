@@ -1,6 +1,15 @@
  p  {text-align:center;}
  h1  {text-align:center;}
- h2  {text-align:center;}
+
+ body {
+    background-color: #44ccf4;
+}
+ /* CSS fake frame style */
+ div {
+     height: 100%;
+     float: left;
+}
+
 
  /* Nav bar properties */
  ul {
@@ -8,7 +17,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f8f8f8;
+    background-color: #44ccf4;
 }
 
 li {
@@ -23,15 +32,22 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+/* Change the link color to #(color) on hover */
+li a:hover:not(.active) {
     background-color: #e8e8e8;
 }
+
+.active {
+    background-color: #696969;
+    color: white;
+}
+
 
 /* Table properties*/
 th {
     text-align: center;
 }
+
 td {
     text-align: center;
 }

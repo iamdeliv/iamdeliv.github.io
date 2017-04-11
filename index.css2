@@ -15,7 +15,7 @@ div {
  h1  {text-align:left;}
 
  body {
-    background-color: #cce6ff;
+    background-color: #09d1f9;
 }
  /* CSS fake frame style */
  div {
@@ -31,7 +31,7 @@ div {
     margin: 0px;
     padding: 40px;
     overflow: hidden;
-    background-color: #cce6ff;
+    background-color: #09d1f9;
 }
 
 li {
@@ -98,7 +98,7 @@ div.table-title {
   border-radius:3px;
   border-collapse: collapse;
   height: 320px;
-/*  margin: auto;*/
+  margin: auto;
   max-width: 600px;
   padding:5px;
   width: 100%;

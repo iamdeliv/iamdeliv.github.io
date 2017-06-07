@@ -16,7 +16,10 @@ div {
 
  body {
     background-color: #cce6ff;
+    margin: 0px;
+    padding: 40px;
 }
+
  /* CSS fake frame style */
  div {
    /*  height: 100%; */
@@ -26,7 +29,7 @@ div {
 
 
  /* Nav bar properties */
- ul {
+ul {
     list-style-type: none;
     margin: 0px;
     padding: 40px;
@@ -61,10 +64,12 @@ li a:hover:not(.active) {
 
 /* Table properties*/
 th {
+    font-family: times new roman;
     text-align: center;
 }
 
 td {
+    font-family: times new roman;
     text-align: center;
 }
 

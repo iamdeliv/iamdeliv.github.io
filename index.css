@@ -1,28 +1,28 @@
 body.construction {
     background-image: url("01-02.png");
-    background-position: ;
+    background-position: top left;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 body.interior {
-    background: url("03-04.png") no-repeat fixed;
+    background: url("01-02.png") no-repeat fixed;
     background-size: cover;
 }
 
 body.landscaping {
-    background: url("05-06.png") no-repeat fixed;
+    background: url("01-02.png") no-repeat fixed;
     background-size: cover;
 }
 
 body.cleaning {
-    background: url("06-08.png") no-repeat fixed;
+    background: url("01-02.png") no-repeat fixed;
     background-size: cover;
 }
 
 body.about {
-    background: url("09-10.png") no-repeat fixed;
+    background: url("01-02.png") no-repeat fixed;
     background-size: cover;
 }
 

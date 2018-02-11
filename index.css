@@ -1,5 +1,8 @@
 body.construction {
-    background: url("01-02.png") no-repeat fixed;
+    background-image: url("01-02.png");
+    background-position: ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -24,12 +27,3 @@ body.about {
 }
 
 
-
-
-img {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
-}

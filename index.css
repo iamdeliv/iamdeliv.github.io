@@ -1,7 +1,6 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body.construction {
+    background: url("01-02.png") no-repeat center fixed;
+    background-size: cover;
 }
 
 img {

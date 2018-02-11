@@ -1,7 +1,30 @@
 body.construction {
-    background: url("01-02.png") no-repeat center fixed;
+    background: url("01-02.png") no-repeat fixed;
     background-size: cover;
 }
+
+body.interior {
+    background: url("03-04.png") no-repeat fixed;
+    background-size: cover;
+}
+
+body.landscaping {
+    background: url("05-06.png") no-repeat fixed;
+    background-size: cover;
+}
+
+body.cleaning {
+    background: url("06-08.png") no-repeat fixed;
+    background-size: cover;
+}
+
+body.about {
+    background: url("09-10.png") no-repeat fixed;
+    background-size: cover;
+}
+
+
+
 
 img {
     padding: 0;

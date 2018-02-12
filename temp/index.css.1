@@ -1,0 +1,94 @@
+
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: ;
+background-color: #f1f1f1;
+}
+
+li a {
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #555;
+color; white;
+}
+
+
+.main {
+grid-area: main;
+}
+.sidebar {
+grid-area: sidebar;
+}
+
+.container {
+    display: grid;
+ 
+
+    /*  Define the size and number of columns in our grid. 
+ *      The fr unit works similar to flex:
+ *          fr columns will share the free space in the row in proportion to their value.
+ *              We will have 2 columns - the first will be 3x the size of the second.  */
+    grid-template-columns: 2fr 1fr;
+
+    /*  Assign the grid areas we did earlier to specific places on the grid. 
+ *          First row is all header.
+ *                  Second row is shared between main and sidebar.
+ *                          Last row is all footer.  */
+    grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+
+    /*  The gutters between each grid cell will be 60 pixels. */
+    grid-gap: 40px;
+}
+
+@media (max-width: 600px) {
+    .container {
+    /*  Realign the grid areas for a mobile layout. */
+        grid-template-areas: 
+            "header header"
+            "main main"
+            "sidebar sidebar"
+            "footer footer";
+    }
+}
+
+
+body.construction {
+    background-image: url("01-02.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.interior {
+    background: url("01-02.png") no-repeat fixed;
+    background-size: cover;
+}
+
+body.landscaping {
+    background: url("01-02.png") no-repeat fixed;
+    background-size: cover;
+}
+
+body.cleaning {
+    background: url("01-02.png") no-repeat fixed;
+    background-size: cover;
+}
+
+body.about {
+    background: url("01-02.png") no-repeat fixed;
+    background-size: cover;
+}
+
+

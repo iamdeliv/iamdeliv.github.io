@@ -1,3 +1,86 @@
+ul {
+    bottom: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+header { 
+grid-area: header;
+}
+
+.main {
+grid-area: main;
+}
+.sidebar {
+grid-area: sidebar;
+}
+
+footer {
+grid-area: footer;
+}
+
+.container {
+    display: grid;
+    background-image: url("01-02.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+ 
+
+    /*  Define the size and number of columns in our grid. 
+ *      The fr unit works similar to flex:
+ *          fr columns will share the free space in the row in proportion to their value.
+ *              We will have 2 columns - the first will be 3x the size of the second.  */
+    grid-template-columns: 2fr 1fr;
+
+    /*  Assign the grid areas we did earlier to specific places on the grid. 
+ *          First row is all header.
+ *                  Second row is shared between main and sidebar.
+ *                          Last row is all footer.  */
+    grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+
+    /*  The gutters between each grid cell will be 60 pixels. */
+    grid-gap: 60px;
+}
+
+@media (max-width: 600px) {
+    .container {
+    /*  Realign the grid areas for a mobile layout. */
+        grid-template-areas: 
+            "header header"
+            "main main"
+            "sidebar sidebar"
+            "footer footer";
+    }
+}
+
+
 body.construction {
     background-image: url("01-02.png");
     background-position: top left;
@@ -7,23 +90,34 @@ body.construction {
 }
 
 body.interior {
-    background: url("01-02.png") no-repeat fixed;
+    background-image: url("03-04.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
-body.landscaping {
-    background: url("01-02.png") no-repeat fixed;
+body.landscape {
+    background-image: url("05-06.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
 body.cleaning {
-    background: url("01-02.png") no-repeat fixed;
+    background-image: url("07-08.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
 body.about {
-    background: url("01-02.png") no-repeat fixed;
+    background-image: url("09-10.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
-
 

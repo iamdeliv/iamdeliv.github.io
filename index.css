@@ -80,9 +80,16 @@ grid-area: footer;
     }
 }
 
-
+html, body {padding:0; margin:0;}
+img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+   
 body.construction {
-    background-image: url("01-02.png");
+    background-image: url("101-02.png");
     background-position: top left;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -94,6 +101,8 @@ body.construction {
     /* The file size of this background image is 93% smaller
  *        to improve page load speed on mobile internet connections */
     background-image: url(mobilecons.png);
+    background-position: center center;
+    background-size: cover;
   }
 }
 
